@@ -30,13 +30,13 @@ The edited files as they existed at the end of class can be downloaded from the 
 
 Online reading and videos will be assigned.
 
-For those who prefer a textbook, a [text Book](https://www.packtpub.com/web-development/html5-and-css3-building-responsive-websites) - _HTML5 and CSS3: Building Responsive Websites_ - is available in paperback [online](https://www.packtpub.com/web-development/html5-and-css3-building-responsive-websites) in a variety of formats. _This text is optional but recommended for those who would like some additional material._ I will not be assigning readings from it. 
+For those who prefer a textbook, a [textbook](https://www.packtpub.com/web-development/html5-and-css3-building-responsive-websites) - _HTML5 and CSS3: Building Responsive Websites_ - is available in paperback [online](https://www.packtpub.com/web-development/html5-and-css3-building-responsive-websites) in a variety of formats. _This text is optional but recommended for those who would like some additional material._ I will not be assigning readings from it. 
 
 ### NYU Server
 
 You are welcome to use your own prefered resources for sharing code however [server Space](http://oit2.scps.nyu.edu) at `http://oit2.scps.nyu.edu` - is provided.
 
-First, test to ensure your account is active by entering `http://oit2.scps.nyu.edu/~<username>` into a browser (note the tilde`~`, be sure to replace `<username>` with your username). E.g. [http://oit2.scps.nyu.edu/~devereld] http://oit2.scps.nyu.edu/~devereld
+First, test to ensure your account is active by entering `http://oit2.scps.nyu.edu/~<username>` into a browser (note the tilde`~`, be sure to replace `<username>` with your username). E.g. [http://oit2.scps.nyu.edu/~devereld](http://oit2.scps.nyu.edu/~devereld)
 
 Your username is the first seven letters of your last name + the first letter of first name. e.g `jdoe`. (If your name is less than 7 characters, your username is your entire last name plus the first letter of your first name.)
 
@@ -48,20 +48,26 @@ When you log into your account you will see a number of files and folders. The `
 
 Do not leave original copies of material on the server as accounts are deleted at the end of the semester.
 
+## Alternate Server
+
+We will be using [Netlfy](https://www.netlify.com/) in the second half of the semester.  
+
 ## Homework
 
-Homework should be handed in by uploading the files to the NYU server and alerting me via email.
+Homework should be handed in by uploading the files to the NYU server and alerting me via email - daniel.deverell@nyu.edu.
 
 ## Summary of Tools and Technology
 
-In this class you will be introduced to:
+A listing of applications and technologies you will be introduced to in the class include:
 
 - HTML, CSS and JavaScript (of course!)
 - Visual Studio Code and the Terminal
 - Git and Github
-- Node Package Manager
+- Node Package Manager (NPM)
 - SASS - a CSS preprocessor
-- the [JAM Stack](https://jamstack.org/) (JavaScript, API's, Markup)
+- the [JAM Stack](https://jamstack.org/) (JAM: JavaScript, API's, Markup)
+- Static site generation (using [11ty](https://www.11ty.io/))
+- Markdown, AJAX and APIs
 
 ## A Sample Exercise
 
