@@ -8,11 +8,11 @@
 
 ## Resources
 
-Your instructor - Daniel Deverell (he, him): Front & Back end developer at Barclays specializing in CSS, JavaScript, React and Node
+Your instructor - Daniel Deverell (he, him): Front & Back end developer specializing in CSS, JavaScript, React and Node
 
 [Email](mailto:daniel.deverell@nyu.edu) - `daniel.deverell@nyu.edu`
 
-[Syllabus](https://docs.google.com/document/d/11lJDA7jHXlQFEqMoLn-SYm2eA-jQov-ANIuczGBpMJE)  - https://docs.google.com/document/d/11lJDA7jHXlQFEqMoLn-SYm2eA-jQov-ANIuczGBpMJE
+[Syllabus](syllabus.docx) - or https://docs.google.com/document/d/1zizI_IXPvOG9MompmZA2YlP32AfRMxVbFlt9SZfCrL0/edit
 
 [LinkedIn](https://www.linkedin.com/in/danieldeverell/) - https://www.linkedin.com/in/danieldeverell/
 
@@ -32,7 +32,7 @@ Online reading and videos will be assigned.
 
 For those who prefer a textbook, a [textbook](https://www.packtpub.com/web-development/html5-and-css3-building-responsive-websites) - _HTML5 and CSS3: Building Responsive Websites_ - is available in paperback [online](https://www.packtpub.com/web-development/html5-and-css3-building-responsive-websites) in a variety of formats. _This text is optional but recommended for those who would like some additional material._ I will not be assigning readings from it. 
 
-### NYU Server
+<!-- ### NYU Server
 
 You are welcome to use your own prefered resources for sharing code however [server Space](http://oit2.scps.nyu.edu) at `http://oit2.scps.nyu.edu` - is provided.
 
@@ -46,11 +46,11 @@ You can upload and download files using SFTP (Secure File Transfer Protocol). Re
 
 When you log into your account you will see a number of files and folders. The `web` folder is where you place folders and files in order to make them accessible at `http://oit2.scps.nyu.edu/~<username>/`. 
 
-Do not leave original copies of material on the server as accounts are deleted at the end of the semester.
+Do not leave original copies of material on the server as accounts are deleted at the end of the semester. -->
 
-## Alternate Server
+## Server
 
-We will be using [Netlfy](https://www.netlify.com/) in the second half of the semester.  
+We will be using [Netlfy](https://www.netlify.com/) to put our files on the internet - please create an account.  
 
 ## Homework
 
@@ -71,7 +71,7 @@ A listing of applications and technologies you will be introduced to in the clas
 
 ## A Sample Exercise
 
-Download the zip file from this page using the green download button.
+Download the zip file from this page using the green "Code" download button.
 
 Open the folder (`cmd-o`) `session1-master` in VS Code.
 
