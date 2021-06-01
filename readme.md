@@ -75,7 +75,7 @@ Download the zip file from this page using the green "Code" download button.
 
 Open the folder (`cmd-o`) `session1-master` in VS Code.
 
-Open `box-model-inspector/index.html` in Google Chrome. Right click on any text and choose `Inspect`.
+Open `app/index.html` in Google Chrome. Right click on any text and choose `Inspect`.
 
 No matter which browser you are working in, the inspector is your first line of defense when troubleshooting and should be kept open _at all times_ when you are working. (Pro tip: set the inspector to the right side of the screen using the kebab menu.)
 
@@ -109,7 +109,7 @@ Concerns here are the different aspects of software functionality. For instance,
 
 ### HTML and Semantics
 
-HTML tags convey _meaning_ to the content that makes up the document to help make it understandable. HTML tags can be made to look anyway you want. They are [semantically](https://en.wikipedia.org/wiki/Semantic_HTML) - not stylistically - important.
+HTML tags convey _meaning_ to the content that makes up the document to help make it understandable. Since HTML tags can be made to look anyway you want they are [semantically](https://en.wikipedia.org/wiki/Semantic_HTML) - not stylistically - important. The proper use of HTML tags is important for accessibility.
 
 HTML tags have attributes to provide additional information about HTML elements. See: the `<img >` tag.
 
@@ -135,7 +135,7 @@ A `<div>` tag is a block tag which is used to create a logical division in your 
 
 Try:
 
-- Use the inspector to set the em tag to `display: block`, and then try `positon: absolute; top: 10px`
+- Use the inspector to set the em tag to `display: block`, and then try `position: absolute; top: 10px`
 
 ### HTML, CSS and JavaScript Comments
 
