@@ -35,13 +35,13 @@ Your instructor - Daniel Deverell (he, him): Front & Back end developer speciali
 
 ### Github
 
-Go to [Github](https://github.com/front-end-foundations). `https://github.com/front-end-foundations`, is the source for _all files_ and notes used in this class. Each class's activities is documented in a readme file. The notes are updated frequently so do not download them until the day after the class.
+Go to [Github](https://github.com/front-end-foundations). `https://github.com/front-end-foundations`, is the source for _all files_ and notes used in this class. Class activities are documented in a readme file.
 
-You can download a zip file from Github using the green "Clone or Download" menu and selecting "Download ZIP."
+_The notes are updated frequently so do not download them until the day after the class._
 
 Please keep the page open in a tab during class for reference and in order to copy and paste code.
 
-The edited files as they existed at the end of class can be downloaded from the `*-done` branch of this and all subsequent Github repositories. Be sure to select the branch on Github _before_ downloading the zip. I will demonstrate this in class.
+At the end of class I typically upload or "push" my files back up to Github in a new branch for your reference. They can be downloaded from the `*-done` branch. Be sure to select the branch on Github _before_ downloading the zip. I will demonstrate this in class.
 
 <!-- ### Recommended Text
 
@@ -75,10 +75,10 @@ Assignments should be handed in by uploading the files to Github and alerting me
 
 A listing of applications and technologies you will be introduced to in the class include:
 
-- HTML, CSS and JavaScript (of course!)
+- HTML, CSS and JavaScript
 - Visual Studio Code and the Terminal
 - Git and Github
-- Node Package Manager (NPM)
+- Node and Node Package Manager (NPM)
 - SASS - a CSS preprocessor
 - the [JAM Stack](https://jamstack.org/) (JAM: JavaScript, API's, Markup)
 - Static site generation (using [11ty](https://www.11ty.io/))
@@ -87,8 +87,8 @@ A listing of applications and technologies you will be introduced to in the clas
 ## Introductory Exercise
 
 1. Create a directory in your preferred location that you will use for _all files in this class_.
-2. Download the zip file from this page using the green "Code" download button in Github
-3. Unarchive the zip file in / into your new directory
+2. Download the zip file from this page using the green "Code" download button on Github
+3. Unarchive the zip file into your new directory
 4. Open the folder `session1-master` in VS Code
 5. Create a new `index.html` in the app directory
 6. In your .html file - type in ! and press tab and this should appear:
