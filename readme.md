@@ -1,14 +1,31 @@
+- [Introduction](#introduction)
+  - [Resources](#resources)
+    - [Github](#github)
+    - [Homework and Assignments](#homework-and-assignments)
+  - [Summary of Tools and Technology](#summary-of-tools-and-technology)
+  - [Introductory Exercise](#introductory-exercise)
+    - [Dev Tools](#dev-tools)
+    - [The Box Model](#the-box-model)
+    - [Block vs Inline](#block-vs-inline)
+    - [HTML and Semantics](#html-and-semantics)
+    - [User Agent Styles](#user-agent-styles)
+  - [CSS Syntax](#css-syntax)
+    - [Three Pillars of the Web](#three-pillars-of-the-web)
+    - [HTML, CSS and JavaScript Comments](#html-css-and-javascript-comments)
+    - [Box Sizing](#box-sizing)
+    - [Media Queries Demo](#media-queries-demo)
+
 # Introduction
 
 1. There is no such thing as a silly question, you are encouraged to speak up anytime something is not clear to you
 2. There is no such thing as a silly mistake, they are a gateway to learning
 3. Do not dismiss someone because they have a different level of experience - be kind to others
 4. During class exercises you promise to alert me the second something goes awry with your project
-5. I will make myself available after class to clarify or expand on topics (or we can set an alternate time via email)
+5. I will make myself available before or after class to clarify or expand on topics (or we can set an alternate time via email)
 
 ## Resources
 
-Your instructor - Daniel Deverell (he, him): Front & Back end developer specializing in CSS, JavaScript, React and Node
+Your instructor - Daniel Deverell (he, him): Front & Back end developer specializing in CSS, JavaScript, React and Node.
 
 [Email](mailto:daniel.deverell@nyu.edu) - `daniel.deverell@nyu.edu`
 
@@ -18,23 +35,25 @@ Your instructor - Daniel Deverell (he, him): Front & Back end developer speciali
 
 ### Github
 
-[Github](https://github.com/front-end-foundations) - `https://github.com/front-end-foundations`, is the source for _all files_ used in this class. Each class's activities will be documented in a readme file.
+Go to [Github](https://github.com/front-end-foundations). `https://github.com/front-end-foundations`, is the source for _all files_ and notes used in this class. Each class's activities is documented in a readme file. The notes are updated frequently so do not download them until the day after the class.
 
 You can download a zip file from Github using the green "Clone or Download" menu and selecting "Download ZIP."
 
 Please keep the page open in a tab during class for reference and in order to copy and paste code.
 
-The edited files as they existed at the end of class can be downloaded from the `*-done` branch of this and all subsequent Github repositories. Be sure to select the branch on Github _before_ downloading the zip. I will demonstarte this in class.
+The edited files as they existed at the end of class can be downloaded from the `*-done` branch of this and all subsequent Github repositories. Be sure to select the branch on Github _before_ downloading the zip. I will demonstrate this in class.
 
-### Reading and (optional) Textbook 
+<!-- ### Recommended Text
 
-Online reading and videos will be assigned.
+To enhance your experience, consider purchasing Wes Bos' [beginner javascript video series](https://beginnerjavascript.com/). It is comprehensive and even those familiar with JavaScript can benefit from it.
 
-For those who prefer a textbook, a [textbook](https://www.packtpub.com/web-development/html5-and-css3-building-responsive-websites) - _HTML5 and CSS3: Building Responsive Websites_ - is available in paperback [online](https://www.packtpub.com/web-development/html5-and-css3-building-responsive-websites) in a variety of formats. _This text is optional but recommended for those who would like some additional material._ I will not be assigning readings from it. 
+Student pricing is available (see the site's FAQ) and there is a detailed [reference](https://wesbos.com/javascript/).
+
+I will be assigning homework from from this series. If you do not buy the video series you can refer to the [reference](https://wesbos.com/javascript/) write ups. -->
 
 <!-- ### NYU Server
 
-You are welcome to use your own prefered resources for sharing code however [server Space](http://oit2.scps.nyu.edu) at `http://oit2.scps.nyu.edu` - is provided.
+You are welcome to use your own preferred resources for sharing code however [server Space](http://oit2.scps.nyu.edu) at `http://oit2.scps.nyu.edu` - is provided.
 
 First, test to ensure your account is active by entering `http://oit2.scps.nyu.edu/~<username>` into a browser (note the tilde`~`, be sure to replace `<username>` with your username). E.g. [http://oit2.scps.nyu.edu/~devereld](http://oit2.scps.nyu.edu/~devereld)
 
@@ -44,17 +63,13 @@ Your password is your first initial plus your last initial plus 123890. e.g. `dd
 
 You can upload and download files using SFTP (Secure File Transfer Protocol). Recommended free SFTP clients include [Cyberduck](https://cyberduck.io) and [Filezilla](https://filezilla-project.org). Note - you _must_ use port 22 or SFTP in order to connect via SFTP.
 
-When you log into your account you will see a number of files and folders. The `web` folder is where you place folders and files in order to make them accessible at `http://oit2.scps.nyu.edu/~<username>/`. 
+When you log into your account you will see a number of files and folders. The `web` folder is where you place folders and files in order to make them accessible at `http://oit2.scps.nyu.edu/~<username>/`.
 
 Do not leave original copies of material on the server as accounts are deleted at the end of the semester. -->
 
-## Server
+### Homework and Assignments
 
-We will be using [Netlfy](https://www.netlify.com/) to put our files on the internet - please create an account.  
-
-## Homework
-
-Homework should be handed in by uploading the files to the NYU server and alerting me via email - daniel.deverell@nyu.edu.
+Assignments should be handed in by uploading the files to Github and alerting me via email - daniel.deverell@nyu.edu.
 
 ## Summary of Tools and Technology
 
@@ -69,43 +84,69 @@ A listing of applications and technologies you will be introduced to in the clas
 - Static site generation (using [11ty](https://www.11ty.io/))
 - Markdown, AJAX and APIs
 
-## A Sample Exercise
+## Introductory Exercise
 
-Download the zip file from this page using the green "Code" download button.
+1. Create a directory in your preferred location that you will use for _all files in this class_.
+2. Download the zip file from this page using the green "Code" download button in Github
+3. Unarchive the zip file in / into your new directory
+4. Open the folder `session1-master` in VS Code
+5. Create a new `index.html` in the app directory
+6. In your .html file - type in ! and press tab and this should appear:
 
-Open the folder (`cmd-o`) `session1-master` in VS Code.
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+```
 
-Open `app/index.html` in Google Chrome. Right click on any text and choose `Inspect`.
+1. Add the code below to `index.html`
 
-No matter which browser you are working in, the inspector is your first line of defense when troubleshooting and should be kept open _at all times_ when you are working. (Pro tip: set the inspector to the right side of the screen using the kebab menu.)
+```html
+<h1>Hello world!</h1>
+<div>
+  <p>Paragraph's and divs are block elements. They're rendered inside a box.</p>
+  <p>
+    This <em>italic text</em> is an inline element. Here is a
+    <a href="#test">link</a> - also an inline element.
+  </p>
+</div>
+```
 
-The shortcut for opening the developer tools is `command-option-i`.
+1. Install the Go Live extension in VSCode and use it to open `app/index.html` in Google Chrome
+2. Right click on any text and choose `Inspect`.
 
-## Three Pillars of Web Design
+### Dev Tools
 
-This simple page illustrates the three pillars of the web - content, appearance and behavior. It is an example of the [separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns) - an important principle in programming.
+No matter which browser you are working in, the developer tools are your first line of defense when troubleshooting and should be kept open when you are working.
 
-- Content (HTML) - uses HTML to _semantically_ markup the contents
-- Appearance (CSS) - uses CSS to determine how the content will appear to the user
-- Behavior (JavaScript) - uses JavaScript to control how the pages works and allow the user to interact with the content
+Set the inspector to the right side of the screen using the "kebab" (...) menu.
+
+(The shortcut for opening the developer tools is `command-option-i`.)
+
+### The Box Model
+
+HTML tags or elements are interpreted as a box in the browser. They have CSS properties such as padding, border, position and margins. Taken together these elements form the box model.
+
+### Block vs Inline
+
+Most HTML elements have a default `display` property set to `block` which means that they create a rectangular box in the browser.
+
+The "opposite" of block in HTML is inline. An example might be a piece of italicized text `<em>` or a link `<a>`. A `<span>` tag is used to create arbitrary inline elements.
+
+The paragraph tag `<p>` creates a box (block) and by default has space above and below it while the italicized text (inline) does not and simply flows along with the rest of the text.
+
+A `<div>` tag is a block tag which is used to create a logical division in your code. It creates an arbitrary box in a browser but other than that has no display characteristics. `div` tags are useful but don't say anything about the content inside them. Use HTML5 [semantic tags](https://www.w3schools.com/html/html5_semantic_elements.asp) whenever possible.
 
 Try:
 
-- Examine elements in the browser with the Elements and Styles dev tools panels open
-- Click on the cat picture and note the changes in the document, how the Elements inspector displays the number, and what happens in the Console tab
-- Click on the link and note the change in the browser's address bar
-- Force the link to hover using the inspector
-  <!-- - Use multiple cursors to change a variable -->
-
-Note that the CSS is linked in the head of the document and the JavaScript is the last item in the HTML just above the closing body tag.
-
-<!-- ## Separation of Concerns
-
-This sample page illustrates the three pillars of the web and comprise an example of the [separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns) - an important principle in programming.
-
-Another example of the separation of concerns might be MVC (model, view, controller) which corresponds to database, interface, and business logic.
-
-Concerns here are the different aspects of software functionality. For instance, in MVC, the business logic or _controller_ is a concern, and the interface or _view_ through which a person uses this logic is another. Changing the interface should not require changing the business logic, and vice versa. This makes it possible to assign different roles and responsibilities to each area for a large organization. -->
+1. Use the inspector to add `margin`, `padding` and `height` to the `em` tag with and without `display: block` and `display: inline-block` noting the box model graphic in the inspector
 
 ### HTML and Semantics
 
@@ -117,47 +158,13 @@ Try:
 
 - Use the inspector to change the `div` tag to an `article` or aside tag
 
-There are only a small [number](https://www.w3schools.com/tags/) of html tags but each has a meaning.
+There are quite a [few html tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) - each has a meaning and appropriate use.
 
 ### User Agent Styles
 
 `User agent styles` are the default styles for HTML elements. By default the browser places margins above and below the header, paragraph and on all four sides of the body. These default styles make sure that the content can be displayed even in the absence of a style sheet. You will typically build on top of these.
 
-### Block vs Inline
-
-Most HTML tags or elements all have a default `display` property set to `block` which means that they create a rectangular region in the browser.
-
-The "opposite" of block in HTML is inline. An example might be a piece of italicized text `<em>` or a link `<a>`. A `<span>` tag is used to create arbitrary inline elements.
-
-The paragraph tag `<p>` creates a box (block) and by default has space above and below it while the italicized text (inline) does not and simply flows along with the rest of the text.
-
-A `<div>` tag is a block tag which is used to create a logical division in your code. It creates an arbitrary box in a browser but other than that has no display characteristics. `div` tags are useful but don't say anything about the content inside them. Use HTML5 [semantic tags](https://www.w3schools.com/html/html5_semantic_elements.asp) whenever possible.
-
-Try:
-
-- Use the inspector to set the em tag to `display: block`, and then try `position: absolute; top: 10px`
-
-### HTML, CSS and JavaScript Comments
-
-In most editors the keyboard shortcut `cmd-/` will comment out a line or lines with the appropriate code:
-
-- HTML: `<!-- -->`
-- CSS: `/* */`
-- JavaScript: `/* */` for multiline comments and `//` for single line comments
-
-Try:
-
-- Comment on and off the meta tag in the HTML file and viewing the result in the browser with the Toggle device button on and off
-- Comment out a CSS property and a CSS rule
-- Comment out the first line of JavaScript - click on the kitten and note the error
-
-### The Box Model
-
-Block elements are interpreted as a box in the browser. Block elements have CSS properties such as padding, borders, position and margins. Taken together these elements form the box model.
-
-Try:
-
-- Adding `margin`, `padding` and `height` to the `em` tag with and without `display: block` and `display: inline-block` noting the box model graphic in the inspector
+1. Add `<link rel="stylesheet" href="styles.css" />` to the head of the html document
 
 ## CSS Syntax
 
@@ -170,9 +177,7 @@ selector {
 }
 ```
 
-The selector determines which HTML element will be selected.
-
-The properties are set by the value after the full colon. These almost always have a unit such as `px`, `s`, `em` or `%`.
+The selector determines which HTML element will be selected and properties are set by the value after the full colon. These almost always have a unit such as `px`, `s`, `em` or `%`.
 
 Let's add padding, border and override the margins.
 
@@ -188,7 +193,7 @@ p {
 }
 ```
 
-Refresh the page and inspect the paragraph again. Note the changes in the inspector.
+Inspect the paragraph again. Note the changes in the inspector.
 
 <!-- Try:
 
@@ -205,6 +210,73 @@ border-width: 3px;
 Try:
 
 - `border-top-style: dotted;`
+
+Add 2 new lines to the bottom of the div:
+
+```html
+<div>
+  <p>Paragraph's and divs are block elements. They're rendered inside a box.</p>
+
+  <p>
+    This <em>italic text</em> is an inline element. Here is a
+    <a href="#test">link</a> - also an inline element.
+  </p>
+  <!-- NEW -->
+  <img src="http://placekitten.com/320/240" alt="click the kitten" />
+  <p>You clicked on the kitten <span>0</span> times</p>
+</div>
+```
+
+Add 2 lines after the div and before the closing body tag:
+
+```html
+<p id="test"><a href="#top">Down here!</a></p>
+<script src="scripts.js"></script>
+```
+
+Note that the CSS is linked in the head of the document and the JavaScript is the last item in the HTML just above the closing body tag.
+
+Click on the kitten and on the links to test.
+
+Try:
+
+- Examine elements in the browser with dev tools panels
+- Click on the cat picture and note the changes in the document, how the Elements inspector displays the number, and what happens in the Console tab
+- Click on the link and note the change in the browser's address bar
+- Force the link to hover using the inspector
+  <!-- - Use multiple cursors to change a variable -->
+
+Examine the JS and CSS.
+
+### Three Pillars of the Web
+
+This simple page illustrates the three pillars of the web - content, appearance and behavior. It is an example of the [separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns) - an important principle in programming.
+
+1. Content (HTML) - uses HTML to _semantically_ markup the content
+1. Appearance (CSS) - uses CSS to determine how the content will appear to the user
+1. Behavior (JavaScript) - uses JavaScript to control how the pages works and allow the user to interact with the content
+
+<!-- ## Separation of Concerns
+
+This sample page illustrates the three pillars of the web and comprise an example of the [separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns) - an important principle in programming.
+
+Another example of the separation of concerns might be MVC (model, view, controller) which corresponds to database, interface, and business logic.
+
+Concerns here are the different aspects of software functionality. For instance, in MVC, the business logic or _controller_ is a concern, and the interface or _view_ through which a person uses this logic is another. Changing the interface should not require changing the business logic, and vice versa. This makes it possible to assign different roles and responsibilities to each area for a large organization. -->
+
+### HTML, CSS and JavaScript Comments
+
+In most editors the keyboard shortcut `cmd-/` will comment out a line or lines with the appropriate code:
+
+- HTML: `<!-- -->`
+- CSS: `/* */`
+- JavaScript: `/* */` for multiline comments and `//` for single line comments
+
+Try:
+
+- Comment on and off the meta tag in the HTML file while viewing the result in the browser with the Toggle device button on and off
+- Comment out a CSS property and a CSS rule
+- Comment out the first line of JavaScript - click on the kitten and note the error
 
 ### Box Sizing
 
@@ -260,17 +332,6 @@ Change it to use `max-width`:
 }
 ```
 
-Note:
-
-- `max-width` means "less than"
+Note: `max-width` means "less than".
 
 In the first case (`min-width`) the styles are added when the screen is small. In the second the styles are added when the screen is wide. This will be important when we start optimizing our CSS for devices with different screen sizes.
-
-### Debugging CSS with the inspector
-
-By keeping an eye on the inspector you will quickly see when something has gone wrong with:
-
-- misspelling
-- bad or inapropriate selectors
-- missing units
-- and more
