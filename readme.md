@@ -119,7 +119,7 @@ A listing of applications and technologies you will be introduced to in the clas
 </div>
 ```
 
-1. Install the Go Live extension in VSCode and use it to open `app/index.html` in Google Chrome
+1. Install the Live Server extension in VSCode and use it to open `app/index.html` in Google Chrome
 2. Right click on any text and choose `Inspect`.
 
 ### Dev Tools
@@ -138,7 +138,7 @@ HTML tags or elements are interpreted as a box in the browser. They have CSS pro
 
 Most HTML elements have a default `display` property set to `block` which means that they create a rectangular box in the browser.
 
-The "opposite" of block in HTML is inline. An example might be a piece of italicized text `<em>` or a link `<a>`. A `<span>` tag is used to create arbitrary inline elements.
+The "opposite" of block in HTML is "inline". An example might be a piece of italicized text `<em>` or a link `<a>`. A `<div>` tag is used to create an arbitrary block element and a `<span>` tag is used to create arbitrary inline elements.
 
 The paragraph tag `<p>` creates a box (block) and by default has space above and below it while the italicized text (inline) does not and simply flows along with the rest of the text.
 
@@ -146,23 +146,23 @@ A `<div>` tag is a block tag which is used to create a logical division in your 
 
 Try:
 
-1. Use the inspector to add `margin`, `padding` and `height` to the `em` tag with and without `display: block` and `display: inline-block` noting the box model graphic in the inspector
+1. Use the inspector to add `margin`, `padding`, `border` and `height` to the `em` tag with and without `display: block` and `display: inline-block` noting the box model graphic in the inspector
 
 ### HTML and Semantics
 
 HTML tags convey _meaning_ to the content that makes up the document to help make it understandable. Since HTML tags can be made to look anyway you want they are [semantically](https://en.wikipedia.org/wiki/Semantic_HTML) - not stylistically - important. The proper use of HTML tags is important for accessibility.
 
-HTML tags have attributes to provide additional information about HTML elements. See: the `<img >` tag.
+HTML tags have attributes to provide additional information about HTML elements such as the `href` in the anchor (`<a href >`) tag.
 
 Try:
 
-- Use the inspector to change the `div` tag to an `article` or aside tag
+- Use the inspector to change the `div` tag to an `article` tag
 
 There are quite a [few html tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) - each has a meaning and appropriate use.
 
 ### User Agent Styles
 
-`User agent styles` are the default styles for HTML elements. By default the browser places margins above and below the header, paragraph and on all four sides of the body. These default styles make sure that the content can be displayed even in the absence of a style sheet. You will typically build on top of these.
+`User agent styles` are the default styles for HTML elements. By default the browser places margins above and below the header, paragraph and on all four sides of the body. These default styles make sure that the document can be displayed even in the absence of a style sheet. You will typically build on top of these.
 
 1. Add `<link rel="stylesheet" href="styles.css" />` to the head of the html document
 
@@ -211,27 +211,25 @@ Try:
 
 - `border-top-style: dotted;`
 
-Add 2 new lines to the bottom of the div:
+Delete the body tag and its contents. Paste the following in in its place.
 
 ```html
-<div>
-  <p>Paragraph's and divs are block elements. They're rendered inside a box.</p>
-
-  <p>
-    This <em>italic text</em> is an inline element. Here is a
-    <a href="#test">link</a> - also an inline element.
-  </p>
-  <!-- NEW -->
-  <img src="http://placekitten.com/320/240" alt="click the kitten" />
-  <p>You clicked on the kitten <span>0</span> times</p>
-</div>
-```
-
-Add 2 lines after the div and before the closing body tag:
-
-```html
-<p id="test"><a href="#top">Down here!</a></p>
-<script src="scripts.js"></script>
+<body>
+  <h1>Hello world!</h1>
+  <div>
+    <p>
+      Paragraph's and divs are block elements. They're rendered inside a box.
+    </p>
+    <p>
+      This <em>italic text</em> is an inline element. Here is a
+      <a href="#test">link</a> - also an inline element.
+    </p>
+    <img src="http://placekitten.com/320/240" alt="click the kitten" />
+    <p>You clicked on the kitten <span>0</span> times</p>
+  </div>
+  <p id="test"><a href="#top">Down here!</a></p>
+  <script src="scripts.js"></script>
+</body>
 ```
 
 Note that the CSS is linked in the head of the document and the JavaScript is the last item in the HTML just above the closing body tag.
@@ -240,17 +238,15 @@ Click on the kitten and on the links to test.
 
 Try:
 
-- Examine elements in the browser with dev tools panels
-- Click on the cat picture and note the changes in the document, how the Elements inspector displays the number, and what happens in the Console tab
+- Click on the cat picture and note how the Elements inspector displays the number, and what happens in the Console tab
 - Click on the link and note the change in the browser's address bar
 - Force the link to hover using the inspector
-  <!-- - Use multiple cursors to change a variable -->
 
-Examine the JS and CSS.
+Examine the applicable JS and CSS.
 
 ### Three Pillars of the Web
 
-This simple page illustrates the three pillars of the web - content, appearance and behavior. It is an example of the [separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns) - an important principle in programming.
+This simple document illustrates the three pillars of the web - content, appearance and behavior - working together. It is an example of the [separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns) - an important principle in programming.
 
 1. Content (HTML) - uses HTML to _semantically_ markup the content
 1. Appearance (CSS) - uses CSS to determine how the content will appear to the user
@@ -327,7 +323,7 @@ Change it to use `max-width`:
 @media (max-width: 700px) {
   p {
     border: 3px solid red;
-    width: 600px;
+    width: 80%;
   }
 }
 ```
