@@ -89,8 +89,8 @@ A listing of applications and technologies you will be introduced to in the clas
 1. Create a directory in your preferred location that you will use for _all files in this class_.
 2. Download the zip file from this page using the green "Code" download button on Github
 3. Unarchive the zip file into your new directory
-4. Open the folder `session1-master` in VS Code
-5. Create a new `index.html` in the app directory
+4. Open the folder `introduction-master` in VS Code
+5. Create a new `index.html` in the `app` directory
 6. In your .html file - type in ! and press tab and this should appear:
 
 ```html
