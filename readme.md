@@ -71,6 +71,16 @@ Do not leave original copies of material on the server as accounts are deleted a
 
 Assignments should be handed in by uploading the files to Github and alerting me via email - daniel.deverell@nyu.edu.
 
+## Zoom Tips
+
+- Press the spacebar if muted to temporarily enable the microphone
+- If possible, leave your camera on
+- Use a second screen by dialing into Zoom on another device or use a larger monitor
+- You will need to configure Zoom for screen sharing (requires restarting Zoom)
+- Recordings are made available on request
+- If you raise your hand please alert me via voice
+
+
 ## Summary of Tools and Technology
 
 A listing of applications and technologies you will be introduced to in the class include:
