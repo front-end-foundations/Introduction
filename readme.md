@@ -29,7 +29,7 @@ Your instructor - Daniel Deverell (he, him): Front & Back end developer speciali
 
 [Email](mailto:daniel.deverell@nyu.edu) - `daniel.deverell@nyu.edu`
 
-[Syllabus](syllabus.docx) - or https://docs.google.com/document/d/1zizI_IXPvOG9MompmZA2YlP32AfRMxVbFlt9SZfCrL0/edit
+[Syllabus](syllabus.docx) - syllabus.docx
 
 [LinkedIn](https://www.linkedin.com/in/danieldeverell/) - https://www.linkedin.com/in/danieldeverell/
 
@@ -37,11 +37,11 @@ Your instructor - Daniel Deverell (he, him): Front & Back end developer speciali
 
 Go to [Github](https://github.com/front-end-foundations). `https://github.com/front-end-foundations`, is the source for _all files_ and notes used in this class. Class activities are documented in a readme file.
 
-_The notes are updated frequently so do not download them until the day after the class._
+_The notes are updated frequently so do not download them until the day of the class._
 
-Please keep the page open in a tab during class for reference and in order to copy and paste code.
+Please keep the notes open in a tab during class for reference and in order to copy and paste code.
 
-At the end of class I typically upload or "push" my files back up to Github in a new branch for your reference. They can be downloaded from the `*-done` branch. Be sure to select the branch on Github _before_ downloading the zip. I will demonstrate this in class.
+At the end of class I typically upload or "push" my files back up to Github for your reference. 
 
 <!-- ### Recommended Text
 
@@ -75,16 +75,18 @@ Assignments should be handed in by uploading the files to Github and alerting me
 
 A listing of applications and technologies you will be introduced to in the class include:
 
-- HTML, CSS and JavaScript
+- HTML, CSS and JavaScript DOM manipulation
 - Visual Studio Code and the Terminal
 - Git and Github
 - Node and Node Package Manager (NPM)
 - SASS - a CSS preprocessor
 - the [JAM Stack](https://jamstack.org/) (JAM: JavaScript, API's, Markup)
-- Static site generation (using [11ty](https://www.11ty.io/))
-- Markdown, AJAX and APIs
+- Static site generation [eleventy](https://www.11ty.io/)
+- AJAX and fetching and displaying data from APIs
 
 ## Introductory Exercise
+
+This exercise introduces some web development basics but is primarily intended to get set up and to give you a feel for the techniques we will be using.
 
 1. Create a directory in your preferred location that you will use for _all files in this class_.
 2. Download the zip file from this page using the green "Code" download button on Github
@@ -136,9 +138,9 @@ HTML tags or elements are interpreted as a box in the browser. They have CSS pro
 
 ### Block vs Inline
 
-Most HTML elements have a default `display` property set to `block` which means that they create a rectangular box in the browser.
+Most HTML elements have a default `display` property of `block` which means that they create a rectangular box in the browser.
 
-The "opposite" of block in HTML is "inline". An example might be a piece of italicized text `<em>` or a link `<a>`. A `<div>` tag is used to create an arbitrary block element and a `<span>` tag is used to create arbitrary inline elements.
+The "opposite" of block in HTML is `inline`. An example might be a piece of italicized text `<em>` or a link `<a>`. A `<div>` tag is used to create an arbitrary block element and a `<span>` tag is used to create arbitrary inline elements.
 
 The paragraph tag `<p>` creates a box (block) and by default has space above and below it while the italicized text (inline) does not and simply flows along with the rest of the text.
 
@@ -152,7 +154,7 @@ Try:
 
 HTML tags convey _meaning_ to the content that makes up the document to help make it understandable. Since HTML tags can be made to look anyway you want they are [semantically](https://en.wikipedia.org/wiki/Semantic_HTML) - not stylistically - important. The proper use of HTML tags is important for accessibility.
 
-HTML tags have attributes to provide additional information about HTML elements such as the `href` in the anchor (`<a href >`) tag.
+HTML tags have _attributes_ that provide additional information about HTML elements such as the `href` in the anchor (`<a href >`) tag.
 
 Try:
 
@@ -271,7 +273,7 @@ In most editors the keyboard shortcut `cmd-/` will comment out a line or lines w
 Try:
 
 - Comment on and off the meta tag in the HTML file while viewing the result in the browser with the Toggle device button on and off
-- Comment out a CSS property and a CSS rule
+- Comment out the body CSS rule and a CSS rule
 - Comment out the first line of JavaScript - click on the kitten and note the error
 
 ### Box Sizing
