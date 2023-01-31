@@ -102,7 +102,7 @@ This exercise introduces some web development basics but is primarily intended t
 2. Download the zip file from this page using the green "Code" download button on Github
 3. Unarchive the zip file into your new directory
 4. Open the folder `introduction-master` in VS Code
-5. Create a new `index.html` in the `app` directory
+5. Create a new `index.html` in the `src` directory
 6. In your .html file - type in ! and press tab and this should appear:
 
 ```html
@@ -118,7 +118,7 @@ This exercise introduces some web development basics but is primarily intended t
 </html>
 ```
 
-1. Add the code below to `index.html`
+1. Add the code below to the body tag in `index.html`
 
 ```html
 <h1>Hello world!</h1>
@@ -131,8 +131,10 @@ This exercise introduces some web development basics but is primarily intended t
 </div>
 ```
 
-1. Install the Live Server extension in VSCode and use it to open `app/index.html` in Google Chrome
-2. Right click on any text and choose `Inspect`.
+Demo - the difference between opening via file and via server.
+
+1. Install the Live Server extension in VSCode and use it to open `src/index.html` in Google Chrome
+2. Right click or control click on the link and choose `Inspect`.
 
 ### Dev Tools
 
@@ -144,7 +146,7 @@ Set the inspector to the right side of the screen using the "kebab" (...) menu.
 
 ### The Box Model
 
-HTML tags or elements are interpreted as a box in the browser. They have CSS properties such as padding, border, position and margins. Taken together these elements form the box model.
+HTML tags (or Elements) are interpreted as a box in the browser. They have properties such as padding, border, position and margins. Taken together these elements comprise the box model.
 
 ### Block vs Inline
 
@@ -158,11 +160,11 @@ A `<div>` tag is a block tag which is used to create a logical division in your 
 
 Try:
 
-1. Use the inspector to add `margin`, `padding`, `border` and `height` to the `em` tag with and without `display: block` and `display: inline-block` noting the box model graphic in the inspector
+1. Use the inspector to add `padding`, `border` and `margin` to the `em` tag with and without `display: block` and `display: inline-block` noting the box model graphic in the inspector
 
 ### HTML and Semantics
 
-HTML tags convey _meaning_ to the content that makes up the document to help make it understandable. Since HTML tags can be made to look anyway you want they are [semantically](https://en.wikipedia.org/wiki/Semantic_HTML) - not stylistically - important. The proper use of HTML tags is important for accessibility.
+HTML tags convey _meaning_ to the content that makes up the document to help make it understandable. Since HTML tags can be made to look anyway you want they are [semantically](https://en.wikipedia.org/wiki/Semantic_HTML) - not stylistically - important. The proper use of HTML tags is important for accessibility and search engine optimization.
 
 HTML tags have _attributes_ that provide additional information about HTML elements such as the `href` in the anchor (`<a href >`) tag.
 
@@ -243,6 +245,8 @@ Delete the body tag and its contents. Paste the following in in its place.
   <script src="scripts.js"></script>
 </body>
 ```
+
+Review the changes - `<img />`, `<span>`, `<script>` and their respective attributes `src`, `alt` `href`, and `id`.
 
 Note that the CSS is linked in the head of the document and the JavaScript is the last item in the HTML just above the closing body tag.
 

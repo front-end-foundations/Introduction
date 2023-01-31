@@ -3,7 +3,10 @@ html {
 }
 
 body {
-  font: 1rem/1.5 sans-serif;
+  /* font: 1rem/1.5 sans-serif; */
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
   background-color: black;
   color: white;
 }
