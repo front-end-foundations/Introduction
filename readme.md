@@ -29,7 +29,7 @@ Your instructor - Daniel Deverell (he, him): Front & Back end developer speciali
 
 [Email](mailto:daniel.deverell@nyu.edu) - `daniel.deverell@nyu.edu`
 
-[Syllabus](syllabus.docx) - syllabus.docx
+[Syllabus](syllabus.pdf) - syllabus.pdf
 
 [LinkedIn](https://www.linkedin.com/in/danieldeverell/) - https://www.linkedin.com/in/danieldeverell/
 
