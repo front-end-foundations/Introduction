@@ -92,7 +92,8 @@ A listing of applications and technologies you will be introduced to in the clas
 - SASS - a CSS preprocessor
 - the [JAM Stack](https://jamstack.org/) (JAM: JavaScript, API's, Markup)
 - Static site generation [eleventy](https://www.11ty.io/)
-- AJAX and fetching and displaying data from APIs
+- Site deployment using [Netlify](https://www.netlify.com)
+- Fetching, processing and displaying data from third party APIs such as [New York Times Developer](https://developer.nytimes.com)
 
 ## Introductory Exercise
 
