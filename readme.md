@@ -19,7 +19,7 @@
 
 1. There is no such thing as a silly question, you are encouraged to speak up anytime something is not clear to you
 2. There is no such thing as a silly mistake, they are a gateway to learning
-3. Do not dismiss someone because they have a different level of experience - be kind to others
+3. Everyone will have a different level of experience - be kind to others
 4. During class exercises you promise to alert me the second something goes awry with your project
 5. I will make myself available before or after class to clarify or expand on topics (or we can set an alternate time via email)
 
@@ -39,9 +39,9 @@ Go to [Github](https://github.com/front-end-foundations). `https://github.com/fr
 
 _The notes are updated frequently so do not download them until the day of the class._
 
-Please keep the notes open in a tab during class for reference and in order to copy and paste code.
+Please keep the notes open in a browser tab during class for reference and in order to copy and paste code.
 
-At the end of class I typically upload or "push" my files back up to Github for your reference. 
+At the end of class I typically upload or "push" my files back up to Github for your reference.
 
 <!-- ### Recommended Text
 
@@ -69,7 +69,7 @@ Do not leave original copies of material on the server as accounts are deleted a
 
 ### Homework and Assignments
 
-Assignments should be handed in by uploading the files to Github and alerting me via email - daniel.deverell@nyu.edu.
+Assignments should be handed in by uploading the files to Github and alerting me via email - daniel.deverell@nyu.edu. You will learn how to use Github during this class. To hand in homework before you've learned to use Github simply email me the files as a zip file.
 
 ## Zoom Tips
 
@@ -78,8 +78,7 @@ Assignments should be handed in by uploading the files to Github and alerting me
 - Use a second screen by dialing into Zoom on another device or use a larger monitor
 - You will need to configure Zoom for screen sharing (requires restarting Zoom)
 - Recordings are made available on request
-- If you raise your hand please alert me via voice
-
+- If I fail to notice a raised hand or question in chat please alert me via voice
 
 ## Summary of Tools and Technology
 
@@ -99,12 +98,12 @@ A listing of applications and technologies you will be introduced to in the clas
 
 This exercise introduces some web development basics but is primarily intended to get set up and to give you a feel for the techniques we will be using.
 
-1. Create a directory in your preferred location that you will use for _all files in this class_.
+1. Create a directory "NYU-introduction" in your preferred location that you will use for _all files in this class_.
 2. Download the zip file from this page using the green "Code" download button on Github
 3. Unarchive the zip file into your new directory
-4. Open the folder `introduction-master` in VS Code
-5. Create a new `index.html` in the `src` directory
-6. In your .html file - type in ! and press tab and this should appear:
+4. Open the folder in VS Code via File > Open (select the folder)
+5. Create a new file `index.html` in the `src` directory
+6. In your HTML file - type in ! and press tab and something like this should appear:
 
 ```html
 <!DOCTYPE html>
