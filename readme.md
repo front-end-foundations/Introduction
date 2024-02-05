@@ -6,7 +6,7 @@
   - [Summary of Tools and Technology](#summary-of-tools-and-technology)
   - [What is Front End Development?](#what-is-front-end-development)
   - [Introductory Exercise](#introductory-exercise)
-    - [Suggested Readings](#suggested-readings)
+    - [Required Reading](#required-reading)
     - [Dev Tools](#dev-tools)
     - [The Box Model](#the-box-model)
     - [Block vs Inline](#block-vs-inline)
@@ -81,10 +81,10 @@ Front end development is the part of web development that is responsible for eve
 
 ## Introductory Exercise
 
-### Suggested Readings
+### Required Reading
 
-[MDN HTML Basocs](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
-[MDN CSS Basics](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps)
+- [MDN HTML Basocs](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
+- [MDN CSS Basics](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps)
 
 This exercise introduces some web development basics but is primarily intended to get set up and to give you a feel for the techniques we will be using.
 
