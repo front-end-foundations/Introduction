@@ -1,21 +1,24 @@
-- [Introduction](#introduction)
+- [Class Info](#class-info)
   - [Resources](#resources)
     - [Github](#github)
     - [Homework and Assignments](#homework-and-assignments)
+  - [Zoom Tips](#zoom-tips)
   - [Summary of Tools and Technology](#summary-of-tools-and-technology)
+  - [What is Front End Development?](#what-is-front-end-development)
   - [Introductory Exercise](#introductory-exercise)
+    - [Suggested Readings](#suggested-readings)
     - [Dev Tools](#dev-tools)
     - [The Box Model](#the-box-model)
     - [Block vs Inline](#block-vs-inline)
     - [HTML and Semantics](#html-and-semantics)
     - [User Agent Styles](#user-agent-styles)
-  - [CSS Syntax](#css-syntax)
+  - [CSS](#css)
     - [Three Pillars of the Web](#three-pillars-of-the-web)
     - [HTML, CSS and JavaScript Comments](#html-css-and-javascript-comments)
     - [Box Sizing](#box-sizing)
     - [Media Queries Demo](#media-queries-demo)
 
-# Introduction
+# Class Info
 
 1. There is no such thing as a silly question, you are encouraged to speak up anytime something is not clear to you
 2. There is no such thing as a silly mistake, they are a gateway to learning
@@ -43,40 +46,16 @@ Please keep the notes open in a browser tab during class for reference and in or
 
 At the end of class I typically upload or "push" my files back up to Github for your reference.
 
-<!-- ### Recommended Text
-
-To enhance your experience, consider purchasing Wes Bos' [beginner javascript video series](https://beginnerjavascript.com/). It is comprehensive and even those familiar with JavaScript can benefit from it.
-
-Student pricing is available (see the site's FAQ) and there is a detailed [reference](https://wesbos.com/javascript/).
-
-I will be assigning homework from from this series. If you do not buy the video series you can refer to the [reference](https://wesbos.com/javascript/) write ups. -->
-
-<!-- ### NYU Server
-
-You are welcome to use your own preferred resources for sharing code however [server Space](http://oit2.scps.nyu.edu) at `http://oit2.scps.nyu.edu` - is provided.
-
-First, test to ensure your account is active by entering `http://oit2.scps.nyu.edu/~<username>` into a browser (note the tilde`~`, be sure to replace `<username>` with your username). E.g. [http://oit2.scps.nyu.edu/~devereld](http://oit2.scps.nyu.edu/~devereld)
-
-Your username is the first seven letters of your last name + the first letter of first name. e.g `jdoe`. (If your name is less than 7 characters, your username is your entire last name plus the first letter of your first name.)
-
-Your password is your first initial plus your last initial plus 123890. e.g. `dd123890` and the computer name is `oit2.scps.nyu.edu`.
-
-You can upload and download files using SFTP (Secure File Transfer Protocol). Recommended free SFTP clients include [Cyberduck](https://cyberduck.io) and [Filezilla](https://filezilla-project.org). Note - you _must_ use port 22 or SFTP in order to connect via SFTP.
-
-When you log into your account you will see a number of files and folders. The `web` folder is where you place folders and files in order to make them accessible at `http://oit2.scps.nyu.edu/~<username>/`.
-
-Do not leave original copies of material on the server as accounts are deleted at the end of the semester. -->
-
 ### Homework and Assignments
 
-Assignments should be handed in by uploading the files to Github and alerting me via email - daniel.deverell@nyu.edu. You will learn how to use Github during this class. To hand in homework before you've learned to use Github simply email me the files as a zip file.
+Assignments should be handed in by uploading the files to Github/Netlify and alerting me via email - daniel.deverell@nyu.edu. You will learn how to use Github during this class. To hand in homework before you've learned to use Github simply email me the files as a zip file.
 
 ## Zoom Tips
 
 - Press the spacebar if muted to temporarily enable the microphone
 - If possible, leave your camera on
 - Use a second screen by dialing into Zoom on another device or use a larger monitor
-- You will need to configure Zoom for screen sharing (requires restarting Zoom)
+- You may need to configure Zoom for screen sharing (requires restarting Zoom)
 - Recordings are made available on request
 - If I fail to notice a raised hand or question in chat please alert me via voice
 
@@ -94,7 +73,18 @@ A listing of applications and technologies you will be introduced to in the clas
 - Site deployment using [Netlify](https://www.netlify.com)
 - Fetching, processing and displaying data from third party APIs such as [New York Times Developer](https://developer.nytimes.com)
 
+## What is Front End Development?
+
+Front end development is the part of web development that is responsible for everything the user sees, touches, clicks and interacts with on a website. It is the part of the web that is visible to the user and is responsible for the look and feel of the site. It is also responsible for the user experience and the user interface.
+
+[MDN](https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer) has a good overview of the role of the front end developer.
+
 ## Introductory Exercise
+
+### Suggested Readings
+
+[MDN HTML Basocs](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
+[MDN CSS Basics](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps)
 
 This exercise introduces some web development basics but is primarily intended to get set up and to give you a feel for the techniques we will be using.
 
@@ -103,7 +93,7 @@ This exercise introduces some web development basics but is primarily intended t
 3. Unarchive the zip file into your new directory
 4. Open the folder in VS Code via File > Open (select the folder)
 5. Create a new file `index.html` in the `src` directory
-6. In your HTML file - type in ! and press tab and something like this should appear:
+6. In your HTML file - type in "html:5" (or simply "!") and press tab or select from the contectual menu and something like this should appear:
 
 ```html
 <!DOCTYPE html>
@@ -133,16 +123,18 @@ This exercise introduces some web development basics but is primarily intended t
 
 Demo - the difference between opening via file and via server.
 
+1. Open file file in Google Chrome and note the path in the address bar
 1. Install the Live Server extension in VSCode and use it to open `src/index.html` in Google Chrome
-2. Right click or control click on the link and choose `Inspect`.
+
+Even though the file is the same, the address bar will be different. This is because the file is being served by a server. The server is not necessary now but some of the features we will be using later will require it. It is also a good habit to get into.
 
 ### Dev Tools
 
-No matter which browser you are working in, the developer tools are your first line of defense when troubleshooting and should be kept open when you are working.
+Right click or control click on the link and choose `Inspect`.
+
+No matter which browser you are working in, developer tools are your first line of defense when troubleshooting _and should be kept open at all times when you are working_. (The shortcut for opening the developer tools is `command-option-i`.)
 
 Set the inspector to the right side of the screen using the "kebab" (...) menu.
-
-(The shortcut for opening the developer tools is `command-option-i`.)
 
 ### The Box Model
 
@@ -154,19 +146,26 @@ Most HTML elements have a default `display` property of `block` which means that
 
 The "opposite" of block in HTML is `inline`. An example might be a piece of italicized text `<em>` or a link `<a>`. A `<div>` tag is used to create an arbitrary block element and a `<span>` tag is used to create arbitrary inline elements.
 
-The paragraph tag `<p>` creates a box (block) and by default has space above and below it while the italicized text (inline) does not and simply flows along with the rest of the text.
+The paragraph tag `<p>` creates a box (block) and by default has space above and below it while the italicized text is inline and simply flows along with the rest of the text.
 
 A `<div>` tag is a block tag which is used to create a logical division in your code. It creates an arbitrary box in a browser but other than that has no display characteristics. `div` tags are useful but don't say anything about the content inside them. Use HTML5 [semantic tags](https://www.w3schools.com/html/html5_semantic_elements.asp) whenever possible.
 
+The `em` tag is an inline tag and is used to create emphasis in text. It is a semantic tag and should be used instead of the `i` tag which is a presentational tag.
+
 Try:
 
-1. Use the inspector to add `padding`, `border` and `margin` to the `em` tag with and without `display: block` and `display: inline-block` noting the box model graphic in the inspector
+1. In the inspector select the first and then the second paragraph. Note that the two paragraph's margin collapses (is not additive)
+2. Add a `div` tag around the second paragraph and note the difference in the inspector
+3. Use the inspector to add `padding`, `border` and `margin` to the `p` tag
+4. Use the inspector to add `padding`, `border` and `margin` to the `em` tag with and without `display: block` and `display: inline-block` noting the box model graphic in the inspector
 
 ### HTML and Semantics
 
-HTML tags convey _meaning_ to the content that makes up the document to help make it understandable. Since HTML tags can be made to look anyway you want they are [semantically](https://en.wikipedia.org/wiki/Semantic_HTML) - not stylistically - important. The proper use of HTML tags is important for accessibility and search engine optimization.
+Semantics is the branch of linguistics and logic concerned with meaning.
 
-HTML tags have _attributes_ that provide additional information about HTML elements such as the `href` in the anchor (`<a href >`) tag.
+HTML semantics are the meaning of the HTML tags. HTML tags convey _meaning_ to the document content to make it understandable. 
+
+Since HTML tags can be made to look anyway you want they are [semantically](https://en.wikipedia.org/wiki/Semantic_HTML) - not stylistically - important. The proper use of HTML tags is important for accessibility and search engine optimization.
 
 Try:
 
@@ -174,13 +173,15 @@ Try:
 
 There are quite a [few html tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) - each has a meaning and appropriate use.
 
+HTML tags have _attributes_ that provide additional information about HTML elements such as the `href` in the anchor (`<a href >`) tag. The `href` attribute specifies the URL of the page the link goes to.
+
 ### User Agent Styles
 
 `User agent styles` are the default styles for HTML elements. By default the browser places margins above and below the header, paragraph and on all four sides of the body. These default styles make sure that the document can be displayed even in the absence of a style sheet. You will typically build on top of these.
 
 1. Add `<link rel="stylesheet" href="styles.css" />` to the head of the html document
 
-## CSS Syntax
+## CSS
 
 CSS rules consist of a [selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors), a set of curly braces, and a series of properties and values separated by a full colon and terminated by a semi colon.
 
@@ -248,7 +249,11 @@ Delete the body tag and its contents. Paste the following in in its place.
 
 Review the changes - `<img />`, `<span>`, `<script>` and their respective attributes `src`, `alt` `href`, and `id`.
 
-Note that the CSS is linked in the head of the document and the JavaScript is the last item in the HTML just above the closing body tag.
+Link the CSS in the head of the document:
+
+`<link rel="stylesheet" href="styles.css" />`
+
+Note the JavaScript is the last item in the HTML just above the closing body tag.
 
 Click on the kitten and on the links to test.
 
@@ -267,6 +272,8 @@ This simple document illustrates the three pillars of the web - content, appeara
 1. Content (HTML) - uses HTML to _semantically_ markup the content
 1. Appearance (CSS) - uses CSS to determine how the content will appear to the user
 1. Behavior (JavaScript) - uses JavaScript to control how the pages works and allow the user to interact with the content
+
+This also illustrates an example of the separation of concerns. The HTML is the content, the CSS is the appearance and the JavaScript is the behavior.
 
 <!-- ## Separation of Concerns
 
