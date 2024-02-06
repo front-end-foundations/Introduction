@@ -7,6 +7,7 @@
   - [What is Front End Development?](#what-is-front-end-development)
   - [Introductory Exercise](#introductory-exercise)
     - [Suggested Reading](#suggested-reading)
+    - [Homework](#homework)
     - [Dev Tools](#dev-tools)
     - [The Box Model](#the-box-model)
     - [Block vs Inline](#block-vs-inline)
@@ -85,7 +86,15 @@ Front end development is the part of web development that is responsible for eve
 
 - [MDN HTML Basocs](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
 - [MDN CSS Basics](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps)
-- if you prefer videos (with interactivity) you may be interested in this free course from [Front End Masters](https://frontendmasters.com/courses/web-development-v3/)
+
+### Homework
+
+Due Monday February 12th.
+
+- Review the content in the HTML section of this free course from [Front End Masters](https://frontendmasters.com/courses/web-development-v3/) (account required)
+- Complete the [exercise](https://frontendmasters.com/courses/web-development-v3/html-project/) 
+- [Post it to Netlify](https://docs.netlify.com/site-deploys/create-deploys/#drag-and-drop)
+- Send me the link to your site
 
 ---
 
