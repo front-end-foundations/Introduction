@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"l9Mez":[function(require,module,exports) {
+})({"l1w2u":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 var HMR_USE_SSE = false;
-module.bundle.HMR_BUNDLE_ID = "ba60c367739bf03c";
+module.bundle.HMR_BUNDLE_ID = "cb6098ed2d0724d1";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -583,87 +583,8 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     });
 }
 
-},{}],"ebWYT":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "initialize", ()=>(0, _sdkInitJs.initialize));
-parcelHelpers.export(exports, "sum", ()=>(0, _utilsJs.sum));
-var _sdkInitJs = require("./sdkInit.js");
-var _utilsJs = require("./utils.js");
-var iFrameHead = window.frames["main-frame"].document.getElementsByTagName("head")[0];
-function injectJS() {
-    console.log(iFrameHead);
-    var myscript = document.createElement("script");
-    myscript.type = "text/javascript";
-    myscript.src = "myscript.js"; // replace this with your SCRIPT
-    iFrameHead.appendChild(myscript);
-}
-// frames[0].window.foo = function () {
-//   console.log("Look at me, executed inside an iframe!", window);
-// };
-// iFrameHead.contentWindow.foo = function () {
-//   console.log("Look at me, executed inside an iframe!");
-// };
-window.addEventListener("pagehide", ()=>{
-    console.log("The page was hidden!");
-});
-window.addEventListener("pageshow", function(event) {
-    console.log("The page was shown!", event);
-});
-window;
-injectJS();
+},{}],"fPnoQ":[function(require,module,exports) {
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./sdkInit.js":"9t5ho","./utils.js":"72Dku"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
+},{}]},["l1w2u","fPnoQ"], "fPnoQ", "parcelRequire8e41")
 
-},{}],"9t5ho":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "initialize", ()=>initialize);
-const initialize = (config)=>{
-    let initStatus = false;
-    if (config) initStatus = true;
-};
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"72Dku":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "sum", ()=>sum);
-parcelHelpers.export(exports, "bestLaCroixFlavor", ()=>bestLaCroixFlavor);
-function sum(a, b) {
-    return a + b;
-}
-function bestLaCroixFlavor() {
-    return "grapefruit";
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["l9Mez","ebWYT"], "ebWYT", "parcelRequire8e41")
-
-//# sourceMappingURL=index.739bf03c.js.map
+//# sourceMappingURL=iframe.2d0724d1.js.map
