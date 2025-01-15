@@ -76,7 +76,7 @@ A listing of applications and technologies you will be introduced to in the clas
 
 ## What is Front End Development?
 
-Front end development is the part of web development that is responsible for everything the user sees, touches, clicks and interacts with on a website. It is the part of the web that is visible to the user and is responsible for the look and feel of the site. It is also responsible for the user experience and the user interface.
+**Front end development** is responsible for everything the user sees, taps, clicks and interacts with on a website. It is the part of the web that is visible to the user and is responsible for the look and feel of the site, the user experience and the user interface. Typically the front end runs in a browser while the **back end** uses back-end or server side programming languages and databases to store and provide data to the front end. Now that JavaScript is both a front and back end programming language, many front end developers are leveraging their skills and working both sides as **full stack developers**.
 
 [MDN](https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer) has a good overview of the role of the front end developer.
 
@@ -92,7 +92,7 @@ Front end development is the part of web development that is responsible for eve
 Due Monday February 12th.
 
 - Review the content in the HTML section of this free course from [Front End Masters](https://frontendmasters.com/courses/web-development-v3/) (account required)
-- Complete the [exercise](https://frontendmasters.com/courses/web-development-v3/html-project/) 
+- Complete the [exercise](https://frontendmasters.com/courses/web-development-v3/html-project/)
 - [Post it to Netlify](https://docs.netlify.com/site-deploys/create-deploys/#drag-and-drop)
 - Send me the link to your site
 
@@ -175,7 +175,7 @@ Try:
 
 Semantics is the branch of linguistics and logic concerned with meaning.
 
-HTML semantics are the meaning of the HTML tags. HTML tags convey _meaning_ to the document content to make it understandable. 
+HTML semantics are the meaning of the HTML tags. HTML tags convey _meaning_ to the document content to make it understandable.
 
 Since HTML tags can be made to look anyway you want they are [semantically](https://en.wikipedia.org/wiki/Semantic_HTML) - not stylistically - important. The proper use of HTML tags is important for accessibility and search engine optimization.
 
