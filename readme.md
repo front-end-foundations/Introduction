@@ -98,10 +98,10 @@ Over the next few weeks you will complete the first (HTML) section of an online 
 
 This exercise introduces some web development basics but is primarily intended to get set up and to give you a feel for the techniques we will be using.
 
-1. Create a directory "NYU-introduction" in your preferred location that you will use for _all files in this class_.
+1. Create a directory "NYU-introduction" on your cpmuter in your preferred location. You will use for _all files in this class_.
 2. Download the zip file from this page using the green "Code" download button on Github
 3. Unarchive the zip file into your new directory
-4. Open the folder in VS Code via File > Open (select the folder)
+4. Open the folder in VS Code via File > Open (select the Introduction-master folder _not_ the NYU-introduction folder)
 5. Create a new file `index.html` in the `src` directory
 6. In your HTML file - type in "html:5" (or simply "!") and press tab or select from the contectual menu and something like this should appear:
 
@@ -131,49 +131,46 @@ This exercise introduces some web development basics but is primarily intended t
 </div>
 ```
 
-Demo - the difference between opening via file and via server.
+Demo - the difference between opening via file and via server - manual refresh vs auto reload.
 
 1. Open file file in Google Chrome and note the path in the address bar
 1. Install the Live Server extension in VSCode and use it to open `src/index.html` in Google Chrome
 
-Even though the file is the same, the address bar will be different. This is because the file is being served by a server. The server is not necessary now but some of the features we will be using later will require it. It is also a good habit to get into.
+Even though the file is the same, the address bar will be different. This is because the file is being served. The server is not absolutely necessary right now but it will reload the page when you change the HTML and offers other features we will be using later. It is a good habit to get into.
 
 ### Dev Tools
 
 Right click or control click on the link and choose `Inspect`.
 
-No matter which browser you are working in, developer tools are your first line of defense when troubleshooting _and should be kept open at all times when you are working_. (The shortcut for opening the developer tools is `command-option-i`.)
+No matter which browser you are working in, developer tools are necessary for development and are your first line of defense when troubleshooting. _They should be kept open at all times when you are working_. (The shortcut for opening the developer tools is `command-option-i`.)
 
 Set the inspector to the right side of the screen using the "kebab" (...) menu.
 
 ### The Box Model
 
-HTML tags (or Elements) are interpreted as a box in the browser. They have properties such as padding, border, position and margins. Taken together these elements comprise the box model.
+Most HTML tags (or Elements) are interpreted as a box in the browser. They have properties such as padding, border, position and margins. Taken together these elements comprise the box model.
 
 ### Block vs Inline
 
-Most HTML elements have a default `display` property of `block` which means that they create a rectangular box in the browser.
+Most HTML elements have a default `display` property of `block` which creates a rectangular box in the browser.
 
 The "opposite" of block in HTML is `inline`. An example might be a piece of italicized text `<em>` or a link `<a>`. A `<div>` tag is used to create an arbitrary block element and a `<span>` tag is used to create arbitrary inline elements.
 
 The paragraph tag `<p>` creates a box (block) and by default has space above and below it while the italicized text is inline and simply flows along with the rest of the text.
 
-A `<div>` tag is a block tag which is used to create a logical division in your code. It creates an arbitrary box in a browser but other than that has no display characteristics. `div` tags are useful but don't say anything about the content inside them. Use HTML5 [semantic tags](https://www.w3schools.com/html/html5_semantic_elements.asp) whenever possible.
+A `<div>` tag is a block tag which is used to create a arbitrary division in your code. It creates an arbitrary box in a browser but has no display characteristics. `div` tags are useful but don't say anything about the content inside them. Use HTML5 [semantic tags](https://www.w3schools.com/html/html5_semantic_elements.asp) whenever possible.
 
-The `em` tag is an inline tag and is used to create emphasis in text. It is a semantic tag and should be used instead of the `i` tag which is a presentational tag.
+The `em` tag is an inline tag and is used to create emphasis. It is a semantic tag and should be used instead of the `i` tag which is presentational tag and no longer used. The i tag is not semantic but presentational.
 
 Try:
 
 1. In the inspector select the first and then the second paragraph. Note that the two paragraph's margin collapses (is not additive)
-2. Add a `div` tag around the second paragraph and note the difference in the inspector
-3. Use the inspector to add `padding`, `border` and `margin` to the `p` tag
-4. Use the inspector to add `padding`, `border` and `margin` to the `em` tag with and without `display: block` and `display: inline-block` noting the box model graphic in the inspector
+1. Use the inspector to add `padding`, `border` and `margin` to the `p` tag
+1. Use the inspector to add `padding`, `border` and `margin` to the `em` tag with and without `display: block` and `display: inline-block` noting the box model graphic in the inspector
 
 ### HTML and Semantics
 
-Semantics is the branch of linguistics and logic concerned with meaning.
-
-HTML semantics are the meaning of the HTML tags. HTML tags convey _meaning_ to the document content to make it understandable.
+Semantics is the branch of linguistics and logic concerned with meaning. HTML tags convey _meaning_ to the document content to make it understandable.
 
 Since HTML tags can be made to look anyway you want they are [semantically](https://en.wikipedia.org/wiki/Semantic_HTML) - not stylistically - important. The proper use of HTML tags is important for accessibility and search engine optimization.
 
@@ -182,6 +179,8 @@ Try:
 - Use the inspector to change the `div` tag to an `article` tag
 
 There are quite a [few html tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) - each has a meaning and appropriate use.
+
+### HTML Attributes
 
 HTML tags have _attributes_ that provide additional information about HTML elements such as the `href` in the anchor (`<a href >`) tag. The `href` attribute specifies the URL of the page the link goes to.
 
@@ -249,7 +248,7 @@ Delete the body tag and its contents. Paste the following in in its place.
       This <em>italic text</em> is an inline element. Here is a
       <a href="#test">link</a> - also an inline element.
     </p>
-    <img src="http://placekitten.com/320/240" alt="click the kitten" />
+    <img src="kitten.jpg" alt="click the kitten" />
     <p>You clicked on the kitten <span>0</span> times</p>
   </div>
   <p id="test"><a href="#top">Down here!</a></p>
