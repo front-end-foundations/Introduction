@@ -78,21 +78,19 @@ A listing of applications and technologies you will be introduced to in the clas
 
 **Front end development** is responsible for everything the user sees, taps, clicks and interacts with on a website. It is the part of the web that is visible to the user and is responsible for the look and feel of the site, the user experience and the user interface. Typically the front end runs in a browser while the **back end** uses back-end or server side programming languages and databases to store and provide data to the front end. Now that JavaScript is both a front and back end programming language, many front end developers are leveraging their skills and working both sides as **full stack developers**.
 
-[MDN](https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer) has a good overview of the role of the front end developer.
-
 ## Introductory Exercise
 
 ### Suggested Reading
 
-- [MDN HTML Basocs](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
+- [MDN HTML Basics](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
 - [MDN CSS Basics](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps)
 
 ### Homework
 
-Due Monday February 12th.
+Over the next few weeks you will complete the first (HTML) section of an online course.
 
-- Review the content in the HTML section of this free course from [Front End Masters](https://frontendmasters.com/courses/web-development-v3/) (account required)
-- Complete the [exercise](https://frontendmasters.com/courses/web-development-v3/html-project/)
+- Review the content in the _HTML section_ of this free course from [Front End Masters](https://frontendmasters.com/courses/web-development-v3/) (account required)
+- Complete the [HTML exercise](https://frontendmasters.com/courses/web-development-v3/html-project/)
 - [Post it to Netlify](https://docs.netlify.com/site-deploys/create-deploys/#drag-and-drop)
 - Send me the link to your site
 
