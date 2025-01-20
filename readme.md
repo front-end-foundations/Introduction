@@ -121,7 +121,7 @@ This exercise introduces some web development basics but is primarily intended t
 1. Add the code below to the body tag in `index.html`
 
 ```html
-<h1>Hello world!</h1>
+<h1>Hello kitty!</h1>
 <div>
   <p>Paragraph's and divs are block elements. They're rendered inside a box.</p>
   <p>
@@ -235,11 +235,11 @@ Try:
 
 - `border-top-style: dotted;`
 
-Delete the body tag and its contents. Paste the following in in its place.
+Add the following to `index.html`:
 
 ```html
 <body>
-  <h1>Hello world!</h1>
+  <h1>Hello kitty!</h1>
   <div>
     <p>
       Paragraph's and divs are block elements. They're rendered inside a box.
@@ -248,6 +248,7 @@ Delete the body tag and its contents. Paste the following in in its place.
       This <em>italic text</em> is an inline element. Here is a
       <a href="#test">link</a> - also an inline element.
     </p>
+    <!-- start here -->
     <img src="kitten.jpg" alt="click the kitten" />
     <p>You clicked on the kitten <span>0</span> times</p>
   </div>
