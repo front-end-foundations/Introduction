@@ -12,6 +12,7 @@
     - [The Box Model](#the-box-model)
     - [Block vs Inline](#block-vs-inline)
     - [HTML and Semantics](#html-and-semantics)
+    - [HTML Attributes](#html-attributes)
     - [User Agent Styles](#user-agent-styles)
   - [CSS](#css)
     - [Three Pillars of the Web](#three-pillars-of-the-web)
@@ -336,7 +337,7 @@ See this [sample](https://codepen.io/DannyBoyNYC/pen/gqeKqd) on Codepen.
 Add a media query to `styles.css`:
 
 ```css
-@media (min-width: 700px) {
+@media (width > 700px) {
   p {
     border: 3px solid red;
     width: 600px;
