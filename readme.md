@@ -220,11 +220,7 @@ p {
 
 Inspect the paragraph again. Note the changes in the inspector.
 
-<!-- Try:
-
-- Setting the height to 4px with `overflow: hidden;` and `overflow: auto;` -->
-
-Note the drop down (triangle) next to padding, margin and border properties in the inspector. This indicates a CSS shortcut. Click on it. Our border property could also be written in long form.
+Note the drop down (triangle) next to padding, margin and border properties in the inspector. This indicates a CSS shortcut. Our border property could also be written in long form.
 
 ```css
 border-style: solid;
@@ -234,7 +230,9 @@ border-width: 3px;
 
 Try:
 
-- `border-top-style: dotted;`
+```css
+border-top-style: dotted;
+```
 
 Add the following to `index.html`:
 
@@ -250,15 +248,17 @@ Add the following to `index.html`:
       <a href="#test">link</a> - also an inline element.
     </p>
     <!-- start here -->
-    <img src="kitten.jpg" alt="click the kitten" />
+    <img src="kitten.jpg" alt="a kitten" />
     <p>You clicked on the kitten <span>0</span> times</p>
   </div>
-  <p id="test"><a href="#top">Down here!</a></p>
+  <p id="test">
+    <a href="#top">Down here!</a>
+  </p>
   <script src="scripts.js"></script>
 </body>
 ```
 
-Review the changes - `<img />`, `<span>`, `<script>` and their respective attributes `src`, `alt` `href`, and `id`.
+Review the additions - `<img />`, `<span>`, `<script>` and their attributes: `src`, `alt` `href`, and `id`.
 
 Link the CSS in the head of the document:
 
