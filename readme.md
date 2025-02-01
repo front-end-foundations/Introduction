@@ -286,15 +286,7 @@ This simple document illustrates the three pillars of the web - content, appeara
 
 This also illustrates an example of the separation of concerns. The HTML is the content, the CSS is the appearance and the JavaScript is the behavior.
 
-<!-- ## Separation of Concerns
-
-This sample page illustrates the three pillars of the web and comprise an example of the [separation of concerns](https://en.wikipedia.org/wiki/Separation_of_concerns) - an important principle in programming.
-
-Another example of the separation of concerns might be MVC (model, view, controller) which corresponds to database, interface, and business logic.
-
-Concerns here are the different aspects of software functionality. For instance, in MVC, the business logic or _controller_ is a concern, and the interface or _view_ through which a person uses this logic is another. Changing the interface should not require changing the business logic, and vice versa. This makes it possible to assign different roles and responsibilities to each area for a large organization. -->
-
-### HTML, CSS and JavaScript Comments
+### Aside: HTML, CSS and JavaScript Comments
 
 In most editors the keyboard shortcut `cmd-/` will comment out a line or lines with the appropriate code:
 
