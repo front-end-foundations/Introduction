@@ -34,7 +34,7 @@ Your instructor - Daniel Deverell (he, him): Front & Back end developer speciali
 
 [Email](mailto:daniel.deverell@nyu.edu) - `daniel.deverell@nyu.edu`
 
-[Syllabus](syllabus.pdf) - syllabus.pdf
+[Syllabus](https://syllabus.sps.nyu.edu/en-US/doc/1nb8nckd8/Spring-2025-INFO1-CE-9764-001-Web-Front-End:-Foundations-%28Full-Stack-Web-Development%29?mode=view)
 
 [LinkedIn](https://www.linkedin.com/in/danieldeverell/) - https://www.linkedin.com/in/danieldeverell/
 
@@ -69,8 +69,6 @@ A listing of applications and technologies you will be introduced to in the clas
 - Visual Studio Code and the Terminal
 - Git and Github
 - Node and Node Package Manager (NPM)
-- SASS - a CSS preprocessor
-- the [JAM Stack](https://jamstack.org/) (JAM: JavaScript, API's, Markup)
 - Static site generation [eleventy](https://www.11ty.io/)
 - Site deployment using [Netlify](https://www.netlify.com)
 - Fetching, processing and displaying data from third party APIs such as [New York Times Developer](https://developer.nytimes.com)
@@ -99,7 +97,7 @@ Over the next few weeks you will complete the first (HTML) section of an online 
 
 This exercise introduces some web development basics but is primarily intended to get set up and to give you a feel for the techniques we will be using.
 
-1. Create a directory "NYU-introduction" on your cpmuter in your preferred location. You will use for _all files in this class_.
+1. Create a directory "NYU-introduction" on your computer in your preferred location. Use this directory for _all class files_.
 2. Download the zip file from this page using the green "Code" download button on Github
 3. Unarchive the zip file into your new directory
 4. Open the folder in VS Code via File > Open (select the Introduction-master folder _not_ the NYU-introduction folder)
