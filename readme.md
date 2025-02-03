@@ -11,12 +11,12 @@
     - [Dev Tools](#dev-tools)
     - [The Box Model](#the-box-model)
     - [Block vs Inline](#block-vs-inline)
+    - [User Agent Styles](#user-agent-styles)
     - [HTML and Semantics](#html-and-semantics)
     - [HTML Attributes](#html-attributes)
-    - [User Agent Styles](#user-agent-styles)
   - [CSS](#css)
     - [Three Pillars of the Web](#three-pillars-of-the-web)
-    - [HTML, CSS and JavaScript Comments](#html-css-and-javascript-comments)
+    - [Aside: HTML, CSS and JavaScript Comments](#aside-html-css-and-javascript-comments)
     - [Box Sizing](#box-sizing)
     - [Media Queries Demo](#media-queries-demo)
 
@@ -153,19 +153,23 @@ Most HTML tags (or Elements) are interpreted as a box in the browser. They have 
 
 Most HTML elements have a default `display` property of `block` which creates a rectangular box in the browser.
 
-The "opposite" of block in HTML is `inline`. An example might be a piece of italicized text `<em>` or a link `<a>`. A `<div>` tag is used to create an arbitrary block element and a `<span>` tag is used to create arbitrary inline elements.
+The "opposite" of block in HTML is `inline`. Examples include our italicized text `<em>` and link `<a>`. A `<div>` tag is used to create an arbitrary block element and a `<span>` tag is used to create arbitrary inline elements.
 
 The paragraph tag `<p>` creates a box (block) and by default has space above and below it while the italicized text is inline and simply flows along with the rest of the text.
 
-A `<div>` tag is a block tag which is used to create a arbitrary division in your code. It creates an arbitrary box in a browser but has no display characteristics. `div` tags are useful but don't say anything about the content inside them. Use HTML5 [semantic tags](https://www.w3schools.com/html/html5_semantic_elements.asp) whenever possible.
+A `<div>` tag is a block tag which you can use to create a division in your code. It creates an arbitrary box (block) in a browser but has no other display characteristics. `div` tags are useful but don't say anything about the content inside them. Use HTML5 [semantic tags](https://www.w3schools.com/html/html5_semantic_elements.asp) whenever possible.
 
 The `em` tag is an inline tag and is used to create emphasis. It is a semantic tag and should be used instead of the `i` tag which is presentational tag and no longer used. The i tag is not semantic but presentational.
+
+### User Agent Styles
+
+`User agent styles` are the default styles for HTML elements. By default the browser places margins above and below the header, paragraph and on all four sides of the body. These default styles make sure that the document can be displayed even in the absence of a style sheet. You will typically build on top of these.
 
 Try:
 
 1. In the inspector select the first and then the second paragraph. Note that the two paragraph's margin collapses (is not additive)
-1. Use the inspector to add `padding`, `border` and `margin` to the `p` tag
-1. Use the inspector to add `padding`, `border` and `margin` to the `em` tag with and without `display: block` and `display: inline-block` noting the box model graphic in the inspector
+2. Use the inspector to add `padding`, `border` and `margin` to the `p` tag
+3. Use the inspector to add `padding`, `border` and `margin` to the `em` tag with and without `display: block` and `display: inline-block` noting the box model graphic in the inspector
 
 ### HTML and Semantics
 
@@ -181,17 +185,17 @@ There are quite a [few html tags](https://developer.mozilla.org/en-US/docs/Web/H
 
 ### HTML Attributes
 
-HTML tags have _attributes_ that provide additional information about HTML elements such as the `href` in the anchor (`<a href >`) tag. The `href` attribute specifies the URL of the page the link goes to.
+HTML tags have _attributes_ that provide additional information about HTML elements such as the `href` in the anchor (`<a href="#test">`) tag. The `href` attribute specifies the URL of the page the link goes to.
 
-### User Agent Styles
+1. Add a link tag in the head region of the html document
 
-`User agent styles` are the default styles for HTML elements. By default the browser places margins above and below the header, paragraph and on all four sides of the body. These default styles make sure that the document can be displayed even in the absence of a style sheet. You will typically build on top of these.
-
-1. Add `<link rel="stylesheet" href="styles.css" />` to the head of the html document
+```html
+<link rel="stylesheet" href="styles.css" />
+```
 
 ## CSS
 
-CSS rules consist of a [selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors), a set of curly braces, and a series of properties and values separated by a full colon and terminated by a semi colon.
+Examine `styles.css`. CSS rules consist of a [selector](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors), a set of curly braces, and a series of properties and values separated by a full colon and terminated by a semi colon:
 
 ```css
 selector {
@@ -200,7 +204,7 @@ selector {
 }
 ```
 
-The selector determines which HTML element will be selected and properties are set by the value after the full colon. These almost always have a unit such as `px`, `s`, `em` or `%`.
+The selector determines which HTML element will be selected and properties are set according to the value after the full colon. These almost always have a unit such as `px`, `s`, `em` or `%`.
 
 Let's add padding, border and override the margins.
 
@@ -209,16 +213,16 @@ Edit `styles.css` to add:
 ```css
 p {
   padding: 16px;
-  margin: 1em;
+  margin: 10px;
   border: 3px solid #333;
   height: 100px;
-  width: 80%;
+  width: 500px;
 }
 ```
 
 Inspect the paragraph again. Note the changes in the inspector.
 
-Note the drop down (triangle) next to padding, margin and border properties in the inspector. This indicates a CSS shortcut. Our border property could also be written in long form.
+Note the dropdown triangle next to padding, margin and border properties in the inspector. This indicates a CSS shortcut. Our border property could also be written in long form.
 
 ```css
 border-style: solid;
@@ -250,7 +254,7 @@ Add the following to `index.html`:
     <p>You clicked on the kitten <span>0</span> times</p>
   </div>
   <p id="test">
-    <a href="#top">Down here!</a>
+    <a href="#top">Go to Top</a>
   </p>
   <script src="scripts.js"></script>
 </body>
@@ -258,19 +262,15 @@ Add the following to `index.html`:
 
 Review the additions - `<img />`, `<span>`, `<script>` and their attributes: `src`, `alt` `href`, and `id`.
 
-Link the CSS in the head of the document:
-
-`<link rel="stylesheet" href="styles.css" />`
-
 Note the JavaScript is the last item in the HTML just above the closing body tag.
 
 Click on the kitten and on the links to test.
 
 Try:
 
-- Click on the cat picture and note how the Elements inspector displays the number, and what happens in the Console tab
+- Click on the cat picture and note how the Elements inspector displays the number, and what happens in the dev tool's Console tab
 - Click on the link and note the change in the browser's address bar
-- Force the link to hover using the inspector
+- Force the link to hover using the dev tool's CSS inspector
 
 Examine the applicable JS and CSS.
 
@@ -294,13 +294,15 @@ In most editors the keyboard shortcut `cmd-/` will comment out a line or lines w
 
 Try:
 
-- Comment on and off the meta tag in the HTML file while viewing the result in the browser with the Toggle device button on and off
-- Comment out the body CSS rule and a CSS rule
+- Comment on and off the image tag in the HTML file
+- Comment out the body CSS rule
 - Comment out the first line of JavaScript - click on the kitten and note the error
+
+Undo the comments.
 
 ### Box Sizing
 
-Examine the paragraphs in the inspector. Box dimensions are additive by default - the amount of space they take up in the browser will be a combination of the amount of content, width, padding and border properties (margins are outside the box model).
+Examine the paragraphs in the inspector. Box dimensions are additive by default - the amount of space they take up in the browser will be a combination of width, padding and border (margins are outside the box model).
 
 There is another sizing method called `border-box`. This method calculates the border and padding within the width and is simpler to work with.
 
@@ -313,14 +315,9 @@ p {
 }
 ```
 
-Note the the height is now exactly 100px.
+Note the the height and width is now exactly as specified in the CSS. It is no longer additive.
 
-Try:
-
-- Setting the width of the paragraphs to 400px
-- Then comment out the box sizing property and examine the width and height using the inspector
-
-See this [sample](https://codepen.io/DannyBoyNYC/pen/gqeKqd) on Codepen.
+Examine this [sample](https://codepen.io/DannyBoyNYC/pen/gqeKqd) on Codepen.
 
 ### Media Queries Demo
 
