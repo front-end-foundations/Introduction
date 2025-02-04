@@ -38,8 +38,11 @@ p {
   padding: 16px;
   margin: 1em;
   border: 3px solid #333;
-  height: 100px;
-  width: 630px;
-  border-top-style: dotted;
+  min-height: 100px;
   box-sizing: border-box;
+}
+@media (width < 700px) {
+  img {
+    width: 90%;
+  }
 }
