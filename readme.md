@@ -254,7 +254,7 @@ Add the following to `index.html`:
     <p>You clicked on the kitten <span>0</span> times</p>
   </div>
   <p id="test">
-    <a href="#top">Go to Top</a>
+    <a href="#top">Go Up</a>
   </p>
   <script src="scripts.js"></script>
 </body>
@@ -335,20 +335,41 @@ Add a media query to `styles.css`:
 Resize the browser and note:
 
 - overrides in the inspector
-- `min-width` means "greater than"
-- the css for `>` (greater than) 700px is _added_ to the styles when the condition is true.
+- the css for `>` (greater than) 700px is _added_ to the styles when the condition is true. Here this means the wide screen.
 
-Change it to use `max-width`:
+Change it to use less than: `width < 700px`:
 
 ```css
-@media (max-width: 700px) {
+@media (width < 700px) {
   p {
     border: 3px solid red;
+    width: 80%;
+  }
+  img {
     width: 80%;
   }
 }
 ```
 
-Note: `max-width` means "less than".
+In the first test case the styles are added when the screen is wide. In the second the styles are added when the screen is narrow. Much of the time it is preferable to add styles mainly to the wide screen. This is called "mobile first design." This will be important when we start optimizing our CSS for devices with different screen sizes.
 
-In the first case (`min-width`) the styles are added when the screen is small. In the second the styles are added when the screen is wide. This will be important when we start optimizing our CSS for devices with different screen sizes.
+Our example above is contrived but it illustrates the concept. In practice you should use as few media queries as possible.
+
+Finish the exercise by altering the CSS as shown:
+
+```css
+p {
+  padding: 16px;
+  margin: 1em;
+  border: 3px solid #333;
+  min-height: 100px;
+  box-sizing: border-box;
+}
+@media (width < 700px) {
+  img {
+    width: 90%;
+  }
+}
+```
+
+Create an account on Netlify, upload the files and send me the link.
