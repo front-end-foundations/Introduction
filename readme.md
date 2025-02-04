@@ -254,7 +254,7 @@ Add the following to `index.html`:
     <p>You clicked on the kitten <span>0</span> times</p>
   </div>
   <p id="test">
-    <a href="#top">Go Up</a>
+    <a href="#">Top</a>
   </p>
   <script src="scripts.js"></script>
 </body>
@@ -264,13 +264,28 @@ Review the additions - `<img />`, `<span>`, `<script>` and their attributes: `sr
 
 Note the JavaScript is the last item in the HTML just above the closing body tag.
 
-Click on the kitten and on the links to test.
+Click on the kitten and on the link to test.
 
 Try:
 
 - Click on the cat picture and note how the Elements inspector displays the number, and what happens in the dev tool's Console tab
 - Click on the link and note the change in the browser's address bar
 - Force the link to hover using the dev tool's CSS inspector
+- Change the hash in the link to `#para` and add the id to the second paragraph:
+
+```html
+<!-- add this id -->
+<p id="para">
+  This <em>italic text</em> is an inline element. Here is a
+  <a href="#test">link</a> - also an inline element.
+</p>
+```
+
+Change the link at the bottom of the page:
+
+```html
+<a href="#para">Go Back</a>
+```
 
 Examine the applicable JS and CSS.
 
