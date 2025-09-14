@@ -1,6 +1,7 @@
 - [Class Info](#class-info)
   - [Resources](#resources)
     - [Github](#github)
+    - [Reading and Text](#reading-and-text)
     - [Homework and Assignments](#homework-and-assignments)
   - [Zoom Tips](#zoom-tips)
   - [Summary of Tools and Technology](#summary-of-tools-and-technology)
@@ -48,6 +49,12 @@ Please keep the notes open in a browser tab during class for reference and in or
 
 At the end of class I typically upload or "push" my files back up to Github for your reference.
 
+### Reading and Text
+
+Over the next few weeks you will complete the first (HTML) section of an online course offered by Frontend Masters, IMHO one of the premier learning sites for web development.
+
+Access to the material requires a free account. You may register at https://frontendmasters.com/free/
+
 ### Homework and Assignments
 
 Assignments should be handed in by uploading the files to Github/Netlify and alerting me via email - daniel.deverell@nyu.edu. You will learn how to use Github during this class. To hand in homework before you've learned to use Github simply email me the files as a zip file.
@@ -86,9 +93,7 @@ A listing of applications and technologies you will be introduced to in the clas
 
 ### Homework
 
-Over the next few weeks you will complete the first (HTML) section of an online course.
-
-- Review the content in the _HTML section_ of this free course from [Front End Masters](https://frontendmasters.com/courses/web-development-v3/) (account required)
+- Review the content in the _HTML section_ of the [Complete Intro to Web Development, v3](https://frontendmasters.com/courses/web-development-v3/)
 - Complete the [HTML exercise](https://frontendmasters.com/courses/web-development-v3/html-project/)
 - [Post it to Netlify](https://docs.netlify.com/site-deploys/create-deploys/#drag-and-drop)
 - Send me the link to your site
